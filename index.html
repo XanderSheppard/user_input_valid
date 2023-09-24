@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Secret Message</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mooli&family=Noto+Sans+JP:wght@600&family=Skranji&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>Welcome to the Secret Message Page</h1>
+    <form id="inputForm">
+        <!-- Input for first name -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required><br>
+
+        <!-- Input for last name -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required><br>
+
+        <!-- Input for zip code -->
+        <label for="zipCode">Zip Code:</label>
+        <input type="text" id="zipCode" required><br>
+
+        <!-- Submit button -->
+        <button type="button" onclick="validateInputs()">Submit</button>
+    </form>
+
+    <div id="message" style="display: none;">
+        <!-- Display secret message here -->
+    </div>
+</body>
+<script src="user_input.js"></script>
+</html>
